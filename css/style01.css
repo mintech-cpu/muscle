@@ -1,0 +1,541 @@
+@charset 'UTF-8';
+
+html{
+    font-size: 100%;
+    /* font-family: 'Roboto Slab', serif; */
+    
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #212121;
+}
+body{
+    line-height: 1.7;
+    color: #212121;
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+
+/************************* HEADER*************************/
+.page-header{
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-style: solid;
+    border-color: #f7003e;
+    border-width: 0px 0px 5px 0px;
+}
+.log a:hover{
+    color: #f7003e;
+    font-size: 50px;
+    /* border-style: solid;
+    border-color: #f7003e;
+    border-width: 0px 0px 8px 0px; */
+}
+.main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    /* margin-top: 34px; */
+    list-style: none;
+    
+}
+.main-nav li{
+    margin-left: 36px;
+    /* border-bottom: solid 5px #212121; */
+}
+.main-nav a{
+    color: #212121;
+}
+.main-nav a:hover{
+    border-style: solid;
+    border-color: #f7003e;
+    border-width: 0px 0px 5px 0px;
+}
+
+/*************** home-content ***************/
+.top{
+    /* background-color: #3498db; */
+    padding-top: 35px;
+    padding-bottom: 25px;
+    /* margin: 30px; */
+    margin: 0 auto;
+    text-align: center;
+    /* border-style: solid;
+    border-color: #212121;
+    border-width: 5px 0px 5px 0px; */
+    border-style: solid;
+    border-color: #f7003e;
+    border-width: 0px 0px 5px 0px;
+
+}
+.select{
+    background: #ecf0f1;
+    color: #212121;
+    margin: 5px;
+    padding: 2px;
+}
+.submit{
+    border: solid 2px#212121;
+    border-radius: 10%;
+}
+.submit:hover{
+    background: #f7003e;
+}
+
+/*表示するテキストが切り替わる*/
+
+.boxtextchange{
+    position: relative;
+    border: 2px solid #212121;
+    border-radius:5px;
+    min-width:250px;
+    min-height: 35px;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color:#212121;
+    outline: none;
+    transition: all .2s;
+}
+/*hoverした際の変化*/
+.boxtextchange:hover{
+  background:#212121;
+  color:#fff;
+}
+
+.boxtextchange span{
+    /*絶対配置でテキストの位置を決める*/
+	position: absolute;
+	left: 50%;
+	top:50%;
+    transform:translate(-50%,-50%);
+    /*アニメーションの指定*/
+    transition: all .5s;
+  /*ブロック要素にしてテキスト折り返しなし*/  
+	display: block;
+	white-space: nowrap;
+}
+
+/*差し替わるテキストの設定*/
+.boxtextchange span:nth-child(2){
+	opacity:0;/*透過0に*/
+}
+
+/*hoverするとテキストが入れ替わる設定*/
+.boxtextchange:hover span:nth-child(1){
+	opacity:0;/*透過0に*/
+}
+
+.boxtextchange:hover span:nth-child(2){
+	opacity:1;/*不透明に*/
+}
+
+/* .btntextchange{
+
+	position: relative;
+
+	border: 1px solid #555;
+	border-radius:25px;
+    min-width:210px;
+	padding: 20px;
+    text-align: center;
+	display: inline-block;
+    text-decoration: none;
+    color: #333;
+    outline: none;
+    transition: all .2s;
+} */
+
+/*hoverした際の変化*/
+.boxtextchange:hover{
+  background:#212121;
+  color:#fff;
+}
+
+.boxtextchange span{
+    /*絶対配置でテキストの位置を決める*/
+	position: absolute;
+	left: ;
+	top:;
+    transform:translate(-50%,-50%);
+    /*アニメーションの指定*/
+    transition: all .5s;
+  
+	/* display: block;
+	white-space: nowrap; */
+}
+
+/*差し替わるテキストの設定*/ /*透過0に*/
+/* .boxtextchange span:nth-child(2){
+	opacity:0;
+} */
+
+/*hoverするとテキストが入れ替わる設定*/ /*透過0に*/
+/* .btntextchange:hover span:nth-child(1){
+	opacity:0;
+} */
+
+/* .btntextchange:hover span:nth-child(2){
+	opacity:1;
+} */
+
+
+
+
+
+
+.title {
+    font-family: 'Roboto Slab', serif;
+	text-align: center;
+	font-weight: 900;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #212121;
+}
+
+.Pickup h2{
+    text-align: center;
+    color: #f7003e;
+    margin-bottom: 5px;
+}
+.Pickup h3{
+    text-align: center;
+}
+
+/* スライダー */
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:94%;
+     margin:0 auto;
+}
+ 
+.slider img {
+     width:100%;/*スライダー内の画像を横幅100%に*/
+     height:auto;
+}
+.slider h3{
+    text-align: ;
+}
+ 
+ /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+ 
+.slider .slick-slide {
+     margin:0 10px;
+}
+ 
+ /*矢印の設定*/
+ 
+ /*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+ 
+ .slick-prev {/*戻る矢印の位置と形状*/
+     left: -1.5%;
+     transform: rotate(-135deg);
+ }
+ 
+ .slick-next {/*次へ矢印の位置と形状*/
+     right: -1.5%;
+     transform: rotate(45deg);
+ }
+ 
+ /*ドットナビゲーションの設定*/
+ 
+ .slick-dots {
+     text-align:center;
+     margin:20px 0 0 0;
+ }
+ 
+ .slick-dots li {
+     display:inline-block;
+     margin:0 5px;
+ }
+ 
+ .slick-dots button {
+     color: transparent;
+     outline: none;
+     width:8px;/*ドットボタンのサイズ*/
+     height:8px;/*ドットボタンのサイズ*/
+     display:block;
+     border-radius:50%;
+     background:#ccc;/*ドットボタンの色*/
+ }
+ 
+ .slick-dots .slick-active button{
+     background:#212121;/*ドットボタンの現在地表示の色*/
+}
+ 
+
+.grid{
+    text-align: center;
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+/* .grid-5{
+    
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 6%;
+    margin-bottom: 60px;
+    
+} */
+.item{
+    margin: 0 10px;
+    padding:0 10px;
+    text-align: center;   
+}
+.serch{
+    font-family: 'Roboto Slab', serif;
+    
+}
+.serch a:hover{
+    border-style: solid;
+    border-color: #f7003e;
+    border-width: 0px 0px 5px 0px;
+}
+
+.serch h3 a:hover{
+    border-style: solid;
+    border-color: #f7003e;
+    border-width: 0px 0px 5px 0px;
+
+}
+
+
+
+.button{
+    /* text-align: center;
+    display: inline-block; */
+    text-decoration: none;
+    color: #212121;
+    border: solid 2px#212121;
+    padding: 10px;
+    margin: 5px;
+}
+.button:hover{
+    background: #f7003e;
+    color: #212121;
+}
+
+.item-name{
+    border-bottom: solid 3px #212121;
+    margin-bottom: 10px;
+}
+
+
+
+/*************** ページ下部 ***************/
+.totop{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+footer{
+    padding: 26px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+footer p{
+    color: #212121;
+    font-size: 1rem;
+}
+.back-nav{
+    display: flex;
+    font-size: 1rem;
+    list-style: none;
+}
+.back-nav li{
+    margin-left: 36px;
+}
+.back-nav a{
+    color: #212121;
+    
+}
+.back-nav a:hover{
+    color: #f7003e;
+}
+
+
+
+
+
+/* セブンイレブン */
+
+/*tabの形状*/
+.tab{
+	display: flex;
+	flex-wrap: wrap;
+}
+.tab li{
+    list-style-type:none;
+}
+.tab li a{
+	display: block;
+	background:#ddd;
+	margin:0 2px;
+	padding:10px 20px;
+}
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a{
+	background:#fff;
+}
+
+/*エリアの表示非表示と形状*/
+.area {
+	display: none;/*はじめは非表示*/
+	opacity: 0;/*透過0*/
+	background: #fff;
+	padding:50px 20px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+    display: block;/*表示*/
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/*アコーディオン全体*/
+.accordion-area{
+    list-style: none;
+    width: 96%;
+    max-width: 1100px;
+    margin:10px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+}
+
+.accordion-area p{
+    text-align: left;
+    margin: 5px;
+}
+
+.accordion-area section {
+	border: 1px solid #ccc;
+}
+
+/*アコーディオンタイトル*/
+.item_title {
+    position: relative;/*+マークの位置基準とするためrelative指定*/
+    cursor: pointer;
+    font-size:1rem;
+    font-weight: normal;
+    padding: 2px;
+    /* padding: 3% 3% 3% 50px; */
+    transition: all .5s ease;
+
+}
+
+/*アイコンの＋と×*/
+.item_title::before,
+.item_title::after{
+    position: absolute;
+    content:'';
+    width: 10px;
+    height: 2px;
+    background-color: #333;
+    
+}
+.item_title::before{
+    top:48%;
+    left: 15px;
+    transform: rotate(0deg);
+    
+}
+.item_title::after{    
+    top:48%;
+    left: 15px;
+    transform: rotate(90deg);
+
+}
+
+/*　closeというクラスがついたら形状変化　*/
+
+.item_title.close::before{
+	transform: rotate(45deg);
+}
+
+.item_title.close::after{
+	transform: rotate(-45deg);
+}
+
+/*アコーディオンで現れるエリア*/
+.box {
+    display: none;/*はじめは非表示*/
+    background: #f3f3f3;
+	margin:0 3% 3% 3%;
+    padding: 3%;
+}
+
+/* モバイル版 */
+@media(max-width: 600px){
+    /* 上部 */
+    .page-title{
+        font-size: 2.5rem;
+    }
+    .main-nav{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .main-nav li{
+        margin: 0 20px;
+    }
+    .home-content{
+        margin-top: 20%;
+    }
+    .page-header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* store */
+    .menu-list{
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
